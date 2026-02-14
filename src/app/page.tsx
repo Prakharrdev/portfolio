@@ -92,6 +92,20 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Top Right Project Link */}
+        <div className="absolute top-6 right-6 z-20 hidden md:flex items-center gap-3 animate-in fade-in slide-in-from-right-10 duration-1000 delay-1000">
+          <span className="text-[10px] uppercase tracking-[0.2em] text-emerald-500/50">Latest Project //</span>
+          <Link href="https://sakura.perkkk.dev" target="_blank">
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="border-emerald-500/20 bg-emerald-950/10 text-emerald-400 hover:bg-emerald-500/10 hover:text-emerald-300 hover:border-emerald-500/50 uppercase tracking-widest text-xs font-bold transition-all duration-300"
+            >
+              Eternal Sakura
+            </Button>
+          </Link>
+        </div>
+
         {/* Footer */}
         <div className="absolute bottom-6 w-full text-center animate-in fade-in duration-1000 delay-1000 mix-blend-difference">
           <p className="flex items-center justify-center gap-2 text-[10px] font-medium uppercase tracking-[0.3em] text-white/20 hover:text-white/40 transition-colors">

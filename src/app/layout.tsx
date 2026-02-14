@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   alternates: {
-    canonical: "./",
+    canonical: "https://perkkk.dev/",
   },
 };
 
