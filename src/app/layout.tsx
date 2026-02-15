@@ -15,26 +15,26 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://perkkk.dev"),
   title: {
-    default: "Perkkk | Creative Developer",
-    template: "%s | Perkkk",
+    default: "Prakhar Gupta | Creative Developer",
+    template: "%s | Prakhar Gupta",
   },
-  description: "Computer Science Student & Creative Engineer. Crafting digital reality with pixel-perfect aesthetics and scalable architecture.",
-  keywords: ["Perkkk", "Creative Developer", "Portfolio", "Web Development", "Computer Science", "Next.js", "React", "Three.js"],
-  authors: [{ name: "Perkkk", url: "https://perkkk.dev" }],
-  creator: "Perkkk",
+  description: "Prakhar Gupta is a B.Tech Computer Science student at Manipal University Jaipur and a creative frontend developer building interactive, scroll-driven web experiences.",
+  keywords: ["Perkkk", "Creative Developer", "Portfolio", "Web Development", "Computer Science", "Prakhar Gupta IEEE", "Prakhar Gupta manipal jaipur", "Prakhar Gupta MUJ","Prakhar Gupta frontend developer", "Prakhar Gupta frontend engineer","Perkkk dev", "Prakhar Gupta creative developer", "Prakhar Gupta web developer", "Prakhar Gupta interactive web experiences"],
+  authors: [{ name: "Prakhar Gupta", url: "https://perkkk.dev" }],
+  creator: "Prakhar Gupta",
   openGraph: {
-    title: "Perkkk | Creative Developer",
+    title: "Prakhar Gupta | Creative Developer",
     description: "Computer Science Student & Creative Engineer. Building the future, one commit at a time.",
     url: "https://perkkk.dev",
-    siteName: "Perkkk Portfolio",
+    siteName: "Prakhar Gupta Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Perkkk | Creative Developer",
+    title: "Prakhar Gupta | Creative Developer",
     description: "Creative Engineer & Computer Science Student.",
-    creator: "@perkkk", // Placeholder or if known
+    creator: "@perkkkdev", // Placeholder or if known
   },
   icons: {
     icon: "/favicon.ico",
@@ -51,11 +51,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Prakhar Gupta",
+              "url": "https://perkkk.dev/",
+              "sameAs": [
+                "https://www.linkedin.com/in/prakharrdev/"
+              ],
+              "jobTitle": "Creative Frontend Developer",
+              "affiliation": {
+                "@type": "CollegeOrUniversity",
+                "name": "Manipal University Jaipur"
+              }
+            })
+          }}
+        />       
+      </head>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          >
+          {children}
+        </body>
     </html>
   );
 }
